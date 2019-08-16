@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <TextView
+            android:text="TextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/textView"/>
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="106dp"
+            android:inputType="textPersonName"
+            android:text="Name"
+            android:ems="10"
+            android:id="@+id/editText5"/>
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="88dp"
+            android:inputType="textPersonName"
+            android:text="Name"
+            android:ems="10"
+            android:id="@+id/editText6"/>
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="95dp"
+            android:inputType="textPersonName"
+            android:text="Name"
+            android:ems="10"
+            android:id="@+id/editText4"/>
+    <Button
+            android:text="Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/button"/>
+</LinearLayout>
