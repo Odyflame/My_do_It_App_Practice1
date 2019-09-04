@@ -39,12 +39,12 @@ class Fragment1 : Fragment() {
         var button1 = rootView.findViewById(R.id.button) as Button
 
         button1.setOnClickListener {
+
             /*createDatabase(editText.text.toString())
             tableName = editText2.getText().toString()
             createTable(tableName)
 
-            insertRecord(editText.text.toString(), editText2.text.toString(), editText3.text.toString())
-*/
+            insertRecord(editText.text.toString(), editText2.text.toString(), editText3.text.toString())*/
 
             callback.insert(editText.text.toString(), editText2.text.toString(), editText3.text.toString())
             Toast.makeText(context, "added bookinfo.", Toast.LENGTH_SHORT).show()

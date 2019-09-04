@@ -7,7 +7,6 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.google.android.material.tabs.TabLayout
 
-
 class MainActivity : AppCompatActivity(), OnDatabaseCallback {
     override fun selectAll(): ArrayList<Bookinfo> {
         var result= database!!.selectAll()
@@ -31,7 +30,7 @@ class MainActivity : AppCompatActivity(), OnDatabaseCallback {
 
         supportFragmentManager.beginTransaction().replace(R.id.container, fragment1).commit()
 
-        var tabs :TabLayout = findViewById(R.id.tabs)
+        var tabs : TabLayout = findViewById(R.id.tabs)
         tabs.addTab(tabs.newTab().setText("input"))
         tabs.addTab(tabs.newTab().setText("inquery"))
 

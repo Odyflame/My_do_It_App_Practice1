@@ -36,6 +36,9 @@ class Fragment2 : Fragment() {
         recyclerView1 = rootView.findViewById(R.id.recyclerView)
         recyclerView1.layoutManager = LinearLayoutManager(context)
 
+        //recyclerView.layoutManager = LinearLayoutManager(context)
+        //recyclerView.adapter = adapter
+
         adapter = BookAdapter()
         recyclerView1.adapter = adapter
         var result = callback.selectAll()
