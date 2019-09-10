@@ -12,11 +12,9 @@ class MainActivity : AppCompatActivity() {
     var fragment1 = Fragment1()
     var fragment2 = Fragment2()
 
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
 
         supportFragmentManager.beginTransaction().replace(R.id.container, fragment1).commit()
 
@@ -32,7 +30,12 @@ class MainActivity : AppCompatActivity() {
                 Log.d("MainActivity", "selected tab : " + position)
 
                 var selected: Fragment? = null
+                when(position){
+                    0 -> selected = fragment1
+                    1 -> selected = fragment2
+                }
 
+                supportFragmentManager.beginTransaction().replace(R.id.container, selected!!).commit()
             }
         })
 
