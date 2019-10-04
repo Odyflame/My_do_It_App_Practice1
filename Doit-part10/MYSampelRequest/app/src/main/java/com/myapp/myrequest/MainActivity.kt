@@ -46,7 +46,7 @@ class MainActivity : AppCompatActivity() {
             Toast.makeText(applicationContext, "Error: " + (error.toString()), Toast.LENGTH_SHORT).show()
         }){
             override fun getParams(): MutableMap<String, String> {
-                val params = HashMap<String, String>()
+                val params = HashMap<String, String>() as MutableMap<String, String>
                 return params
             }
         }

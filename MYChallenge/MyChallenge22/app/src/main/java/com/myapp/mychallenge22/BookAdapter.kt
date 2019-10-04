@@ -50,6 +50,7 @@ class BookAdapter : RecyclerView.Adapter<BookAdapter.ViewHolder>() {
             listener.onItemClick(holder, view, position)
         }
     }
+
     inner class ViewHolder : RecyclerView.ViewHolder{
 
         lateinit var textView :TextView
